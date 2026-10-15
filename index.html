@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Bewertungsklar hilft Restaurants, Cafés und Hotels, Online-Bewertungen einzuordnen, souverän zu beantworten und daraus zu lernen.">
+<title>Bewertungsklar – Bewertungen einordnen und souverän antworten</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f6f1;--surf:#fff;--ink:#14231f;--mute:#4f5f5a;--line:#dde3dd;--mint:#e3f3ea;--teal:#0d6b5d;--green:#0f2a26;--green2:#173a34;--amber:#f2a93b;--hd:"Bricolage Grotesque","Trebuchet MS",Arial,sans-serif;--bd:"Source Sans 3","Segoe UI",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1513;--surf:#112320;--ink:#e9f1ec;--mute:#a3b6ae;--line:#223833;--mint:#16332c;--teal:#6fdcc8}}
+:root[data-theme="dark"]{--bg:#0a1513;--surf:#112320;--ink:#e9f1ec;--mute:#a3b6ae;--line:#223833;--mint:#16332c;--teal:#6fdcc8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(80px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--bd)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--green);z-index:30}
+a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.w{width:min(1120px,calc(100% - 40px));margin:auto}
+h1,h2,h3{font-family:var(--hd);line-height:1.1;margin:0}
+.nav{background:var(--green);color:#fff;position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav .w{display:flex;align-items:center;gap:26px;min-height:68px}
+.brand{font:800 21px var(--hd);letter-spacing:-.5px;display:flex;gap:10px;align-items:center}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 5px #f2a93b33}
+.nl{margin-left:auto;display:flex;gap:22px;align-items:center;font-size:15px}
+.nl a:hover{color:var(--amber)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:12px;font:700 16px var(--bd);border:2px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.b1{background:var(--amber);color:#1b1405}.b2{border-color:#ffffff55;color:#fff}.b3{border-color:var(--ink);color:var(--ink);background:transparent}
+.sm{padding:9px 16px;font-size:14px}
+.lang{background:none;border:1px solid #ffffff55;color:#fff;border-radius:8px;padding:6px 10px;font-size:13px}
+.hero{background:var(--green);color:#fff;padding:76px 0 90px}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(38px,5.4vw,66px);font-weight:800;letter-spacing:-2px}
+.hero p.l{font-size:19px;color:#cfe0d9;max-width:540px;margin:22px 0 30px}
+.act{display:flex;gap:12px;flex-wrap:wrap}.fine{font-size:14px;color:#a9c2b8;margin-top:20px}
+.rv{background:#fff;color:#14231f;border-radius:18px;padding:22px;box-shadow:0 24px 60px #00000055;max-width:470px;margin-left:auto}
+.rv .top{display:flex;justify-content:space-between;font-size:13px;color:#52625d;border-bottom:1px solid #e3e8e4;padding-bottom:12px}
+.rv .st{color:#e79a1f;font-size:22px;letter-spacing:2px;margin:14px 0 4px}
+.rv q{display:block;font-size:18px;font-weight:600;quotes:none}
+mark{background:#ffd98f;color:#14231f;padding:1px 5px;border-radius:5px}
+.note{margin-top:16px;background:#e3f3ea;border-left:4px solid #0d6b5d;border-radius:8px;padding:12px 14px;font-size:14.5px;color:#0f3a32}
+.note b{display:block;margin-bottom:2px}
+.trust{background:var(--mint);border-bottom:1px solid var(--line)}
+.trust .w{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:30px 0}
+.trust b{font:700 18px var(--hd);display:block}.trust span{font-size:15px;color:var(--mute)}
+section{padding:88px 0}
+.hd{max-width:660px;margin-bottom:38px}.hd h2{font-size:clamp(30px,4vw,44px);letter-spacing:-1.2px;font-weight:800}.hd p{color:var(--mute);margin:12px 0 0}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.sv{border-top:3px solid var(--teal);padding-top:18px}.sv h3{font-size:23px;margin-bottom:8px}.sv p{color:var(--mute);margin:0}
+.steps{background:var(--surf)}
+.stp{display:grid;grid-template-columns:auto 1fr;gap:16px}.n{font:800 34px var(--hd);color:var(--teal);line-height:1}.stp h3{font-size:21px;margin-bottom:6px}.stp p{margin:0;color:var(--mute)}
+.demo .dp{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--surf);border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.dp>div{padding:28px}.dp label{display:block;font-weight:700;font-size:15px;margin:14px 0 6px}.dp label:first-child{margin-top:0}
+textarea,input[type=time]{width:100%;border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--bg);color:var(--ink);font:inherit}
+textarea{height:150px;resize:vertical}.dp small{display:block;color:var(--mute);margin:10px 0 16px;font-size:14px}
+.res{background:var(--mint);min-height:300px}.res h3{font-size:21px;margin-bottom:10px}.res li{margin-bottom:8px;font-size:15.5px}.res ul{padding-left:20px;margin:10px 0}
+.res .em{color:var(--mute);text-align:center;padding-top:70px}.res .fn{font-size:13.5px;color:var(--mute);border-top:1px solid var(--line);padding-top:12px;margin-top:14px}
+.flag{display:inline-block;background:#ffd98f;color:#4a3000;font-weight:700;font-size:13px;border-radius:99px;padding:3px 12px}
+.pr{background:var(--surf)}
+.pc{border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;background:var(--bg)}
+.pc.hl{border:2px solid var(--teal);background:var(--surf)}
+.pc h3{font-size:22px}.pc .p{font:800 42px var(--hd);letter-spacing:-1.5px;margin:10px 0 4px}.pc .p span{font:500 15px var(--bd);color:var(--mute);letter-spacing:0}
+.pc ul{padding-left:20px;color:var(--mute);margin:12px 0 22px;flex:1}.chip{font-size:13px;font-weight:700;color:var(--teal)}
+.fn2{color:var(--mute);font-size:14px;margin-top:22px}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0;max-width:820px}.faq summary{font:700 19px var(--hd);cursor:pointer}.faq p{color:var(--mute);margin:10px 0 0}
+.cta{background:var(--green);color:#fff;padding:80px 0}
+.cta .w{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.cta h2{font-size:clamp(30px,4vw,46px);letter-spacing:-1.2px}.cta p{color:#cfe0d9;margin:14px 0 0}
+.cb{border:1px solid #ffffff33;border-radius:18px;padding:26px;background:#ffffff0d}.cb .btn{width:100%}.cb small{display:block;margin-top:12px;color:#a9c2b8;font-size:14px}
+footer{background:#08181a;background:#071513;color:#a9c2b8;padding:34px 0 40px;font-size:14px}
+footer .w{display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between}footer b{color:#fff}
+footer button{background:none;border:0;color:#cfe0d9;text-decoration:underline;padding:0;font-size:14px}
+dialog{max-width:640px;width:calc(100% - 32px);border:1px solid var(--line);border-radius:16px;background:var(--surf);color:var(--ink);padding:26px;max-height:85vh;overflow:auto}
+dialog::backdrop{background:#000a}dialog h3{font-size:24px;margin-bottom:12px}dialog p{font-size:15.5px;color:var(--mute)}
+.todo{background:#ffd98f;color:#4a3000;border-radius:4px;padding:0 4px}
+@media(max-width:860px){.hg,.cta .w,.demo .dp{grid-template-columns:1fr}.g3,.trust .w{grid-template-columns:1fr}.rv{margin:0}.nl a.o{display:none}section{padding:62px 0}.hero{padding:52px 0 64px}}
+@media(max-width:480px){.nl{gap:10px}.nl .btn{padding:8px 12px;font-size:14px}.brand{font-size:18px}.w{width:calc(100% - 28px)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="w"><a class="brand" href="#start"><i class="dot"></i>Bewertungsklar</a>
+<div class="nl"><a class="o" href="#leistungen" data-t="nS">Leistungen</a><a class="o" href="#ablauf" data-t="nA">Ablauf</a><a class="o" href="#preise" data-t="nP">Preise</a><a class="o" href="#faq">FAQ</a><button class="lang" id="lang" type="button" aria-label="Switch language">EN</button><a class="btn b1 sm tally" data-t="nC" target="_blank" rel="noopener noreferrer">Kostenlos anfragen</a></div></div></nav>
+<main>
+<section class="hero" id="start" style="padding-top:76px"><div class="w hg"><div>
+<h1 data-t="h1">Schlechte Bewertung? Erst einordnen, dann souverän antworten.</h1>
+<p class="l" data-t="lead">Bewertungsklar hilft Restaurants, Cafés und Hotels, Online-Bewertungen sachlich zu prüfen, passende Antworten zu formulieren und aus echtem Feedback zu lernen. Ohne Löschversprechen.</p>
+<div class="act"><a class="btn b1 tally" target="_blank" rel="noopener noreferrer" data-t="c1">Kostenlose Anfrage senden</a><a class="btn b2" href="#demo" data-t="c2">Beispiel testen</a></div>
+<div class="fine" data-t="fine">Keine Löschgarantie. Kein Echtheitsnachweis. Nicht mit Google verbunden.</div></div>
+<div class="rv" aria-label="Beispiel"><div class="top"><b data-t="rvT">Review-Check</b><span data-t="rvD">Fiktives Beispiel</span></div><div class="st">★☆☆☆☆</div><q data-t="rvQ">„Wir waren gestern <mark>um 23 Uhr</mark> zum Essen da. Der Service war schlecht.“</q><div class="note" data-t="rvN"><b>Rückfrage empfohlen</b>Schließt das Lokal um 21 Uhr, sollte zuerst die Uhrzeit geklärt werden. Das beweist keine Fälschung.</div></div></div></section>
+
+<div class="trust"><div class="w">
+<div><b data-t="t1">Ehrlich statt Löschversprechen</b><span data-t="t1s">Ob eine Bewertung gegen Googles Regeln verstößt, entscheidet allein Google.</span></div>
+<div><b data-t="t2">Mensch prüft jede Auswertung</b><span data-t="t2s">Nichts wird automatisch veröffentlicht oder gemeldet. Sie geben jede Antwort frei.</span></div>
+<div><b data-t="t3">Datensparsam</b><span data-t="t3s">Wir bitten nur um das Nötigste. Namen und Kontaktdaten Dritter gehören nicht in die Anfrage.</span></div></div></div>
+
+<section id="leistungen"><div class="w"><div class="hd"><h2 data-t="sH">Was Sie von uns bekommen</h2><p data-t="sP">Klare, nachvollziehbare Unterstützung für den Umgang mit Online-Bewertungen.</p></div>
+<div class="g3"><div class="sv"><h3 data-t="s1">Review-Check</h3><p data-t="s1p">Wir zeigen erkennbare Unstimmigkeiten und formulieren faire Rückfragen. Ein Besuch lässt sich dadurch weder beweisen noch ausschließen.</p></div>
+<div class="sv"><h3 data-t="s2">Antwortentwürfe</h3><p data-t="s2p">Freundliche, individuelle Antworten auf lobende und kritische Bewertungen, im Ton Ihres Hauses.</p></div>
+<div class="sv"><h3 data-t="s3">Monatlicher Überblick</h3><p data-t="s3p">Wiederkehrende Themen wie Wartezeit, Sauberkeit oder Service sehen und die wichtigsten Verbesserungen angehen.</p></div></div></div></section>
+
+<section class="steps" id="ablauf"><div class="w"><div class="hd"><h2 data-t="aH">In drei Schritten zum Überblick</h2></div>
+<div class="g3"><div class="stp"><div class="n">1</div><div><h3 data-t="a1">Anfrage senden</h3><p data-t="a1p">Sie füllen das kurze Formular aus und sagen uns, wobei Sie Hilfe brauchen.</p></div></div>
+<div class="stp"><div class="n">2</div><div><h3 data-t="a2">Einordnung erhalten</h3><p data-t="a2p">Wir melden uns per E-Mail und fassen Auffälligkeiten, offene Fragen und nächste Schritte zusammen.</p></div></div>
+<div class="stp"><div class="n">3</div><div><h3 data-t="a3">Professionell antworten</h3><p data-t="a3p">Sie bekommen einen Antwortvorschlag und Hinweise, wie Sie Ihren Service verbessern.</p></div></div></div></div></section>
+
+<section class="demo" id="demo"><div class="w"><div class="hd"><h2 data-t="dH">Probieren Sie den Check aus</h2><p data-t="dP">Diese Vorschau nutzt einfache Regeln direkt in Ihrem Browser. Es wird nichts übertragen und keine KI oder Google-Daten verwendet.</p></div>
+<div class="dp"><div><label for="rev" data-t="dL1">Beispiel-Bewertung</label><textarea id="rev" maxlength="2000"></textarea><label for="cl" data-t="dL2">Übliche Schließzeit des Lokals</label><input id="cl" type="time" value="21:00"><small data-t="dS">Bitte keine echten Namen oder privaten Daten eingeben.</small><button class="btn b3" id="go" type="button" data-t="dB">Beispiel prüfen</button></div>
+<div class="res" id="res" aria-live="polite"><p class="em" data-t="dE">Das Ergebnis erscheint hier.</p></div></div></div></section>
+
+<section class="pr" id="preise"><div class="w"><div class="hd"><h2 data-t="pH">Pilotpreise, klar und ohne Löschgarantie</h2><p data-t="pP">Faire Einstiegspreise für die Pilotphase. Es gibt keine Vertragsbindung beim Anfragen.</p></div>
+<div class="g3">
+<div class="pc"><h3 data-t="p1">Einmaliger Review-Check</h3><div class="p">39 € <span data-t="p1u">einmalig</span></div><ul><li data-t="p1a">Bis zu fünf Bewertungen</li><li data-t="p1b">Auffälligkeiten und offene Fragen</li><li data-t="p1c">Antwortentwürfe</li></ul><a class="btn b3 tally" target="_blank" rel="noopener noreferrer" data-t="pb">Anfragen</a></div>
+<div class="pc hl"><span class="chip" data-t="pop">Für Pilotkunden</span><h3 data-t="p2">Monatliche Betreuung</h3><div class="p">79 € <span data-t="p2u">/ Monat</span></div><ul><li data-t="p2a">Laufende Prüfung eingereichter Bewertungen</li><li data-t="p2b">Antwortvorschläge</li><li data-t="p2c">Monatlicher Überblick</li></ul><a class="btn b1 tally" target="_blank" rel="noopener noreferrer" data-t="pb2">Anfragen</a></div>
+<div class="pc"><h3 data-t="p3">Plus-Betreuung</h3><div class="p">149 € <span data-t="p3u">/ Monat</span></div><ul><li data-t="p3a">Größerer Bewertungsumfang</li><li data-t="p3b">Bevorzugte Bearbeitung</li><li data-t="p3c">Monatliche Handlungsempfehlungen</li></ul><a class="btn b3 tally" target="_blank" rel="noopener noreferrer" data-t="pb3">Anfragen</a></div></div>
+<p class="fn2" data-t="pF">Preise netto/brutto und Zahlungsbedingungen klären wir vor Beginn schriftlich mit Ihnen.</p></div></section>
+
+<section class="faq" id="faq"><div class="w"><div class="hd"><h2 data-t="fH">Häufige Fragen</h2></div>
+<details><summary data-t="q1">Lassen sich negative Bewertungen löschen?</summary><p data-t="a1x">Nein, das versprechen wir nicht. Echte negative Erfahrungen dürfen online bleiben. Nur Google entscheidet, ob eine Bewertung gegen seine Richtlinien verstößt.</p></details>
+<details><summary data-t="q2">Erkennen Sie gefälschte Bewertungen?</summary><p data-t="a2x">Nicht verbindlich. Wir zeigen Widersprüche und Fragen, die bei der Einordnung helfen. Ein Beweis für eine Fälschung ist das nicht.</p></details>
+<details><summary data-t="q3">Ersetzt das einen Anwalt?</summary><p data-t="a3x">Nein. Wir bieten keine Rechtsberatung. Rechtliche Schritte gegen Bewertungen sollten Sie mit einer qualifizierten Rechtsberatung klären.</p></details>
+<details><summary data-t="q4">Was passiert mit meinen Daten?</summary><p data-t="a4x">Wir nutzen Ihre Angaben nur, um Ihre Anfrage zu bearbeiten. Details stehen in der Datenschutzerklärung im Seitenfuß.</p></details></div></section>
+
+<section class="cta"><div class="w"><div><h2 data-t="kH">Wollen Sie Ihre Bewertungen besser verstehen?</h2><p data-t="kP">Senden Sie uns eine kurze, kostenlose Anfrage. Wir melden uns per E-Mail bei Ihnen.</p></div>
+<div class="cb"><a class="btn b1 tally" target="_blank" rel="noopener noreferrer" data-t="kB">Zum Anfrageformular</a><small data-t="kS">Das Formular öffnet sich in einem neuen Tab und wird über Tally verarbeitet.</small></div></div></section>
+</main>
+<footer><div class="w"><div><b>Bewertungsklar</b><br><span data-t="fT">Bewertungsunterstützung für Gastronomie und Hotellerie</span></div><div><button type="button" data-d="imp">Impressum</button> &nbsp; <button type="button" data-d="dsg" data-t="fD">Datenschutz</button><br><span data-t="fG">Nicht mit Google verbunden. Keine Rechtsberatung.</span></div></div></footer>
+<dialog id="dlg"><div id="dbody"></div><p style="margin-top:18px"><button class="btn b3 sm" type="button" id="dx">Schließen</button></p></dialog>
+<script>
+const TALLY='https://tally.so/r/xVxJM5';
+document.querySelectorAll('.tally').forEach(a=>a.href=TALLY);
+const EN={nS:'Services',nA:'Process',nP:'Pricing',nC:'Send inquiry',h1:'A bad review? Understand it first, then reply with confidence.',lead:'Bewertungsklar helps restaurants, cafés and hotels assess online reviews calmly, write fitting replies and learn from genuine feedback. No promises of deletion.',c1:'Send a free inquiry',c2:'Try the example',fine:'No deletion guarantee. No proof of authenticity. Not affiliated with Google.',rvT:'Review check',rvD:'Fictional example',rvQ:'“We ate there yesterday <mark>at 11 PM</mark>. The service was bad.”',rvN:'<b>Follow-up recommended</b>If the venue closes at 9 PM, check the time first. This does not prove the review is fake.',t1:'Honest, not deletion promises',t1s:'Only Google decides whether a review breaks its rules.',t2:'A human checks every result',t2s:'Nothing is published or reported automatically. You approve every reply.',t3:'Data-minimal',t3s:'We ask only for what is needed. No names or contact details of third parties.',sH:'What you get',sP:'Clear, understandable support for handling online reviews.',s1:'Review check',s1p:'We point out visible inconsistencies and draft fair follow-up questions. This can neither prove nor rule out a visit.',s2:'Reply drafts',s2p:'Friendly, personal replies to praise and criticism, in your venue’s tone.',s3:'Monthly overview',s3p:'See recurring themes like waiting time, cleanliness or service and tackle the most important fixes.',aH:'Three steps to clarity',a1:'Send an inquiry',a1p:'Fill in the short form and tell us what help you need.',a2:'Get an assessment',a2p:'We reply by email with inconsistencies, open questions and next steps.',a3:'Reply professionally',a3p:'You receive a reply draft and tips to improve your service.',dH:'Try the check',dP:'This preview uses simple rules in your browser. Nothing is sent anywhere, and no AI or Google data is used.',dL1:'Example review',dL2:'Usual closing time',dS:'Please do not enter real names or private data.',dB:'Check example',dE:'Your result appears here.',pH:'Pilot pricing, clear and without deletion guarantees',pP:'Fair starter prices for the pilot phase. Inquiring creates no commitment.',p1:'One-off review check',p1u:'one-off',p1a:'Up to five reviews',p1b:'Inconsistencies and open questions',p1c:'Reply drafts',pb:'Inquire',pop:'For pilot customers',p2:'Monthly support',p2u:'/ month',p2a:'Ongoing review of submitted reviews',p2b:'Reply suggestions',p2c:'Monthly overview',pb2:'Inquire',p3:'Plus support',p3u:'/ month',p3a:'Larger review volume',p3b:'Priority handling',p3c:'Monthly action recommendations',pb3:'Inquire',pF:'We confirm net/gross prices and payment terms with you in writing before we start.',fH:'Frequently asked questions',q1:'Can negative reviews be deleted?',a1x:'We do not promise that. Genuine negative experiences may stay online. Only Google decides whether a review breaks its policies.',q2:'Can you detect fake reviews?',a2x:'Not conclusively. We show contradictions and questions that help you assess a review. That is not proof of fraud.',q3:'Does this replace a lawyer?',a3x:'No. We do not give legal advice. Discuss legal steps against reviews with qualified legal counsel.',q4:'What happens to my data?',a4x:'We use your details only to handle your inquiry. See the privacy policy in the footer.',kH:'Want to understand your reviews better?',kP:'Send a short, free inquiry. We will reply by email.',kB:'Open the inquiry form',kS:'The form opens in a new tab and is processed by Tally.',fT:'Review support for restaurants and hotels',fD:'Privacy',fG:'Not affiliated with Google. No legal advice.'};
+const DE={};let lang='de';
+const $=id=>document.getElementById(id);
+const S={de:{rev:'Wir waren gestern um 23 Uhr im Restaurant. Das Essen war schlecht und der Service langsam.',ok:'Auswertung',f1:'Die genannte Zeit liegt nach der Schließzeit. Prüfen Sie Sonderöffnungen oder Erinnerungsfehler.',f2:'Die genannte Zeit liegt nicht nach der Schließzeit. Das bestätigt keinen Besuch.',f3:'Keine eindeutige Uhrzeit im Text erkannt.',f4:'Mögliche Kontaktdaten im Text. Vor der Weitergabe entfernen.',rt:'Vorschlag für eine Antwort',rp:'Vielen Dank für Ihr Feedback. Es tut uns leid, dass Sie enttäuscht wurden. Wir möchten verstehen, was passiert ist, und freuen uns über Details zu Ihrem Besuch über unseren direkten Kontakt.',fn:'Regelbasierte Demo. Kein KI-Modell, keine Echtheitsprüfung, keine Rechtsberatung.',fl:'Zeit prüfen',fo:'Kontext offen',empty:'Bitte eine Bewertung eingeben.'},
+en:{rev:'We ate at the restaurant at 11 PM yesterday. The food was bad and the service slow.',ok:'Assessment',f1:'The stated time is after closing time. Check special openings or memory errors.',f2:'The stated time is not after closing time. This does not confirm a visit.',f3:'No clear time found in the text.',f4:'Possible contact details in the text. Remove before sharing.',rt:'Suggested reply',rp:'Thank you for your feedback. We are sorry you were disappointed. We would like to understand what happened and welcome details about your visit through our direct contact.',fn:'Rule-based demo. No AI model, no authenticity check, no legal advice.',fl:'Check the time',fo:'Context open',empty:'Please enter a review.'}};
+$('rev').value=S.de.rev;
+$('lang').onclick=()=>{lang=lang==='de'?'en':'de';document.documentElement.lang=lang;$('lang').textContent=lang==='de'?'EN':'DE';
+document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;if(!(k in DE))DE[k]=e.innerHTML;if(lang==='de')e.innerHTML=DE[k];else if(EN[k])e.innerHTML=EN[k]});
+$('rev').value=S[lang].rev;$('res').innerHTML='<p class="em">'+EN.dE.replace(EN.dE,lang==='de'?DE.dE:EN.dE)+'</p>';$('dx').textContent=lang==='de'?'Schließen':'Close'};
+function visit(t){let m=t.match(/(?:um\s+)?\b([01]?\d|2[0-3])(?:[:.]([0-5]\d))?\s*uhr\b/i);if(m)return+m[1]*60+ +(m[2]||0);m=t.match(/\b(1[0-2]|0?[1-9])(?::([0-5]\d))?\s*([ap])\.?m\b/i);if(m){let h=m[1]%12;if(/p/i.test(m[3]))h+=12;return h*60+ +(m[2]||0)}return null}
+function add(p,tag,txt,cls){const e=document.createElement(tag);if(cls)e.className=cls;e.textContent=txt;p.appendChild(e);return e}
+$('go').onclick=()=>{const L=S[lang],r=$('res'),t=$('rev').value.trim().slice(0,2000);r.replaceChildren();if(!t){add(r,'p',L.empty,'em');return}
+const c=$('cl').value,v=visit(t),cm=c?+c.slice(0,2)*60+ +c.slice(3,5):null,bad=v!==null&&cm!==null&&v>cm;
+add(r,'h3',L.ok);add(r,'span',bad?L.fl:L.fo,'flag');const ul=add(r,'ul','');
+add(ul,'li',v===null?L.f3:bad?L.f1:L.f2);if(/[\w.+-]+@[\w.-]+\.[a-z]{2,}|\+?49\s?\d{3,}/i.test(t))add(ul,'li',L.f4);
+add(r,'h3',L.rt).style.fontSize='17px';add(r,'p',L.rp);add(r,'p',L.fn,'fn')};
+const IMP='<h3>Impressum</h3><p>Angaben gemäß § 5 DDG</p><p><span class="todo">[Vor- und Nachname / Firmenname]</span><br><span class="todo">[Straße und Hausnummer]</span><br><span class="todo">[PLZ Ort]</span></p><p>Kontakt: <span class="todo">[E-Mail-Adresse]</span>, <span class="todo">[Telefonnummer]</span></p><p>Umsatzsteuer-ID (falls vorhanden): <span class="todo">[USt-IdNr.]</span></p>';
+const DSG='<h3>Datenschutzerklärung</h3><p><b>Verantwortlich:</b> <span class="todo">[Name und Anschrift wie im Impressum]</span>, <span class="todo">[E-Mail]</span></p><p><b>Diese Website</b> setzt keine Cookies und nutzt keine Analyse- oder Tracking-Dienste. Die Beispiel-Prüfung läuft ausschließlich in Ihrem Browser; es werden keine Eingaben übertragen. Schriftarten werden von Google Fonts geladen, dabei wird Ihre IP-Adresse an Google übermittelt.</p><p><b>Anfrageformular:</b> Das Formular wird von Tally (Tally B.V.) bereitgestellt. Ihre Angaben dienen ausschließlich der Bearbeitung Ihrer Anfrage. <span class="todo">[Rechtsgrundlage, Speicherdauer, Empfänger und Ihre Rechte nach Art. 15-21 DSGVO ergänzen]</span></p>';
+document.querySelectorAll('[data-d]').forEach(b=>b.onclick=()=>{$('dbody').innerHTML=b.dataset.d==='imp'?IMP:DSG;$('dlg').showModal()});
+$('dx').onclick=()=>$('dlg').close();
+</script>
+</body>
+</html>
